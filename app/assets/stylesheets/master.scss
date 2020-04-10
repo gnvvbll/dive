@@ -6,23 +6,24 @@
     font-weight: 200;
     color: pink;
     box-shadow: 0px 1px 3px #e0d4d3;
-    background: image_url('hip-square.png');
+    background: image_url('');
+    font-size: 20px;
   }
 
   .navbar-light a.navbar-brand {
     font-family: 'montserratregular';
     font-weight: light;
-    color:#afc1e7;
+    color:#fcf806;
     font-size: 50pt;
   }
 
   .hero {
-    background: image_url('hero.jpg') no-repeat center center fixed;
+    background: image_url('workspace.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 370px;
+    height: 500px;
     box-shadow: 0px 3px 3px #e0d4d3;
   }
 
@@ -33,23 +34,20 @@
     font-size: 18px;
   }
 
-  .frosty {
-    background: rgba(152, 164, 230, 0.3);
-    color: white;
-  }
-
   .frosty h1 {
-    font-family: 'montserratregular';
-    font-weight: 100;
-    font-size: 60px;
-    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px;
+    font-family: 'Helvetica';
+    font-weight: 400;
+    font-size: 100px;
+    color: rgb(245, 202, 11);
+    text-shadow: rgba(247, 155, 18, 0.5) 1px 1px;
   }
 
   .frosty h2 {
     font-family: 'montserratlight';
     font-weight: 200;
     font-size: 40px;
-    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px;
+    color:white;
+    text-shadow: rgba(116, 112, 112, 0.5) 1px 1px;
   }
 
   .btn {
@@ -62,9 +60,6 @@
       padding-right: 5%;
   }
 
-  body {
-      background: image_url('cork-wallet.png');
-  }
 
   .booyah-box {
     -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
