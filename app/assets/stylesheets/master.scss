@@ -1,163 +1,203 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.navbar {
-    font-family: 'montserratregular';
-    font-weight: 200;
-    color: pink;
-    box-shadow: 0px 1px 3px #e0d4d3;
-    background: image_url('');
-    font-size: 20px;
-  }
-
-  .navbar-light a.navbar-brand {
-    font-family: 'montserratregular';
-    font-weight: light;
-    color:#fcf806;
-    font-size: 50pt;
-  }
-
-  .hero {
-    background: image_url('workspace.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 500px;
-    box-shadow: 0px 3px 3px #e0d4d3;
-  }
-
-  h1, h2, h3, h4, h5, h6, .navbar {
-    margin: 0;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    font-size: 18px;
-  }
-
-  .frosty h1 {
-    font-family: 'Helvetica';
-    font-weight: 400;
-    font-size: 100px;
-    color: rgb(245, 202, 11);
-    text-shadow: rgba(247, 155, 18, 0.5) 1px 1px;
-  }
-
-  .frosty h2 {
-    font-family: 'montserratlight';
-    font-weight: 200;
-    font-size: 40px;
-    color:white;
-    text-shadow: rgba(116, 112, 112, 0.5) 1px 1px;
-  }
-
-  .btn {
-    border-radius: 0;
-  }
-
-  .feature {
-      width: 100%;
-      padding-left: 5%;
-      padding-right: 5%;
-  }
+//THIS CSS IS FOR MOBILE
 
 
-  .booyah-box {
-    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-    box-shadow: 1px 1px 2px 0 #d0d0d0;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    padding: 10px;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    font-size: 28px;
-  }
 
-  .booyah-box h2, .booyah-box h1 {
-    margin: 10px;
-  }
 
-  .help-block {
-    color: #ff3333;
-    background-color: #ffeeee;
-    border-radius: 3px;
-    padding: 2px, 8px, 2px, 8px;
-    margin: 10px;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-  }
+//THIS CSS IS FOR DESKTOP USE
 
-  .clr {
-    clear: both; 
-  }
+@media only screen and (min-width: 1000px) {
 
-  .lesson {
-    background-color: rgb(89, 118, 173);
-    margin-top: 10px;
-    height: 130px;
-  }
+    .navbar {
+      box-shadow: 0px 1px 3px #e0d8d3;
+      background: image_url('');
+      font-family: 'Manrope', sans-serif;
+      font-weight: 200;
+      font-size: 26px;
+      color: rgb(53, 48, 49);
+      display: inline-block;
+    }
 
-  .section {
-    border: 1px solid;
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    padding: 20px;
-  }
+    li {
+      margin-right: 15px;
+      text-align: center;
+      display: inline-block;
+    }
 
-  .lesson a {
-    color: white;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    font-size: 22px;
-  }
+    a.nav-link {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 200;
+      font-size: 20px;
+      color: rgb(53, 48, 49);
+      float: right !important;
+    }
 
-  .lesson a b {
-    font-weight: 150;
-    font-size: 30px;
-  }
+    .navbar-light a.navbar-brand {
+      font-weight: 400;
+      font-size: 100px;
+      font-kerning: 3px;
+      color:#0703f0;
+      font-family: 'Damion', cursive;
+    }
 
-  ul {
-    list-style-type: none;
-  }
+    .hero {
+      background: image_url('man.png') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 750px;
+      box-shadow: 0px 3px 3px #e0d4d3;
+    }
 
-  .section-li {
-    border: 1px solid;
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-    padding: 20px;
-  }
+    .frosty h1 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 400;
+      font-size: 100px;
+      color: #0703f0;
+      text-align: left !important;
+      padding-left: 80px;
+    }
 
-  ul .header {
-    font-size: 25px;
-  }
+    .frosty h2 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 200;
+      font-size: 40px;
+      color:#9694f7;
+      text-align: left !important;
+      padding-left: 80px;
+    }
 
-  ul .header .fa {
-    font-size: 20px;
-  }
+    .btn {
+      border-radius: 0;
+      position: absolute;
+      top: 475px;
+      left: 180px;
+    }
 
-  .lessons li {
-    background: black;
-    color: white;
-    margin: 10px;
-    font-family: "Helvetica Neue", Helvetica;
-    font-weight: 100;
-    padding: 8px;
-    font-size: 15px;
-  }
+    .feature {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-  .lessons li b {
-    font-size: 25px;
-    font-weight: 100;
-  }
 
-  .lessons li p {
-    margin: 0;
-  }
+    .booyah-box {
+      -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+      -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+      box-shadow: 1px 1px 2px 0 #d0d0d0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+      padding: 10px;
+      font-family: 'Manrope', sans-serif;
+    }
 
-  ul {
-    list-style-type: none;
-  }
+    .booyah-box h2, .booyah-box h1 {
+      margin: 10px;
+    }
 
-  .section-li {
-    border: 1px solid;
-    border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  }
+    .booyah-box h3 {
+      margin: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 100;
+      font-size: 40px;
+      color: #9694f7;
+    }
+
+    .booyah-box p {
+      margin: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 100;
+      font-size: 28px;
+    }
+
+    ////////////////
+
+
+    .help-block {
+      color: #ff3333;
+      background-color: #ffeeee;
+      border-radius: 3px;
+      padding: 2px, 8px, 2px, 8px;
+      margin: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 100;
+    }
+
+    .clr {
+      clear: both; 
+    }
+
+    .lesson {
+      background-color: rgb(89, 118, 173);
+      margin-top: 10px;
+      height: 130px;
+    }
+
+    .section {
+      border: 1px solid;
+      border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+      padding: 20px;
+    }
+
+    .lesson a {
+      color: white;
+      font-family: 'montserratregular';
+      font-weight: 100;
+      font-size: 22px;
+    }
+
+    .lesson a b {
+      font-weight: 150;
+      font-size: 30px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .section-li {
+      border: 1px solid;
+      border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+      padding: 20px;
+    }
+
+    ul .header {
+      font-size: 25px;
+    }
+
+    ul .header .fa {
+      font-size: 20px;
+    }
+
+    .lessons li {
+      background: black;
+      color: white;
+      margin: 10px;
+      font-family: "Helvetica Neue", Helvetica;
+      font-weight: 100;
+      padding: 8px;
+      font-size: 15px;
+    }
+
+    .lessons li b {
+      font-size: 25px;
+      font-weight: 100;
+    }
+
+    .lessons li p {
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .section-li {
+      border: 1px solid;
+      border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+    }
+}

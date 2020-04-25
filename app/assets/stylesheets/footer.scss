@@ -18,12 +18,16 @@ body {
     min-height: 100px;
     background-color: rgba(36, 32, 33, 0.9);
     color: white;
-    font-family: "Helvetica Neue", Helvetica;
+    font-family: 'Manrope', sans-serif;
     padding: 10px 0px; 
     margin-top: 30px;
+    padding-top: 20px;
+    font-size: 30px;
 }
 
 #footer a {
     color: white; 
     font-weight: 100;
+    font-size: 25px;
+    padding-left: 15px;
 }

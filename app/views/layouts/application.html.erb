@@ -5,6 +5,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="http://vjs.zencdn.net/5.12.6/video-js.css" rel="stylesheet">
@@ -14,9 +16,6 @@
     <div id="flex-content-container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <%= link_to 'Dive.', root_path, class: 'navbar-brand' %>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
        
           <ul class="navbar-nav mr-auto mt-2 mt-md-0">
             <li class="nav-item">
@@ -26,10 +25,11 @@
           <ul class="navbar-nav mr-auto mt-2 mt-md-0 float-lg-right">
           <% if user_signed_in? %>
             <li class="nav-item"><%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %></li>
-            <li class="nav-item"><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+            <li class="nav-item"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'nav-link'  %></li>
+            Welcome back, <%= current_user.email %>
           <% else %>
-              <li class="nav-item"><%= link_to 'Sign in', new_user_session_path %></li>
-              <li class="nav-item"><%= link_to 'Sign up', new_user_registration_path %></li>
+            <li class="nav-item"><%= link_to 'Sign In', new_user_session_path, class: 'nav-link'  %></li>
+            <li class="nav-item"><%= link_to 'Sign Up', new_user_registration_path, class: 'nav-link'  %></li>
           <% end %>
           </ul>
         </div>
@@ -47,9 +47,8 @@
 
    <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <b>Want to teach a course?</b>
+      <%= link_to 'Click here to get started.', new_instructor_course_path %>
       </div>
     </div>
 
