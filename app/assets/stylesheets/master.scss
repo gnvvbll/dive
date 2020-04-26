@@ -3,6 +3,115 @@
 
 //THIS CSS IS FOR MOBILE
 
+@media only screen and (max-width: 999px) {
+
+  .navbar {
+    box-shadow: 0px 1px 3px #e0d8d3;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: rgb(53, 48, 49);
+    display: inline-block;
+    padding-top: 10px;
+  }
+
+  li {
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  a.nav-link {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    color: rgb(53, 48, 49);
+    float: right !important;
+  }
+
+  .navbar-light a.navbar-brand {
+    font-weight: 400;
+    font-size: 50px;
+    font-kerning: 3px;
+    color:#0703f0;
+    font-family: 'Damion', cursive;
+  }
+
+  .hero {
+    background: image_url('man_mobile.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: relative;
+    box-shadow: 0px 3px 3px #e0d4d3;
+  }
+
+  .frosty h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color: #0703f0;
+    text-align: left !important;
+    padding-left: 80px;
+  }
+
+  .frosty h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    color:#9694f7;
+    text-align: left !important;
+    padding-left: 80px;
+  }
+
+  .btn {
+    border-radius: 0;
+    position: absolute;
+    top: 475px;
+    left: 180px;
+  }
+
+  .feature {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+
+  .booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 10px;
+  font-family: 'Manrope', sans-serif;
+  }
+
+  .booyah-box h2, .booyah-box h1 {
+  margin: 10px;
+  }
+
+  .booyah-box h3 {
+  margin: 10px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  color: #9694f7;
+  }
+
+  .booyah-box p {
+  margin: 10px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  }
+
+}
+
+
 
 
 
@@ -12,7 +121,6 @@
 
     .navbar {
       box-shadow: 0px 1px 3px #e0d8d3;
-      background: image_url('');
       font-family: 'Manrope', sans-serif;
       font-weight: 200;
       font-size: 26px;
@@ -70,11 +178,32 @@
       padding-left: 80px;
     }
 
-    .btn {
+    .btn-light {
       border-radius: 0;
       position: absolute;
       top: 475px;
       left: 180px;
+    }
+
+
+    //course page css
+
+
+    .details-btn {
+      position: relative;
+      background-color: #0703f0 !important;
+      color: white;
+      font-weight: bold;
+      border-color: #0703f0 !important;
+      width: 90px;
+    }
+
+    .details-btn :focus {
+      border-color: #9694f7;
+    }
+
+    .row {
+      padding-bottom: 15px;
     }
 
     .feature {
@@ -95,7 +224,59 @@
       font-family: 'Manrope', sans-serif;
     }
 
-    .booyah-box h2, .booyah-box h1 {
+    h1.text-center {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 400;
+      font-size: 60px;
+      color: #0703f0;
+      margin: 10px;
+    }
+
+    .course-title a {
+      font-family: 'Manrope', sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: #f79588 !important;
+      margin: 10px;
+    }
+
+    .course-description {
+      font-family: 'Manrope', sans-serif;
+      font-size: 20px;
+    }
+
+    .course-page-title h1 {
+      margin: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 100;
+      font-size: 40px;
+      color: #f79588;
+      padding-left: 25px;
+    }
+
+    h1.course-instructor-page-title {
+      margin: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 100;
+      font-size: 40px;
+      color: #f79588;
+    }
+
+    h2.course-instructor-page-subtitle {
+      margin: 10px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 100;
+      font-size: 15px;
+      color: black;
+    }
+
+    .course-page-description {
+      font-family: 'Manrope', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .booyah-box h2 {
       margin: 10px;
     }
 
@@ -103,8 +284,8 @@
       margin: 10px;
       font-family: 'Manrope', sans-serif;
       font-weight: 100;
-      font-size: 40px;
-      color: #9694f7;
+      font-size: 20px;
+      color: #0703f0;
     }
 
     .booyah-box p {
@@ -112,6 +293,11 @@
       font-family: 'Manrope', sans-serif;
       font-weight: 100;
       font-size: 28px;
+    }
+
+    .badge-light {
+      height: 30px;
+      font-family: 'Manrope', sans-serif;
     }
 
     ////////////////
@@ -132,15 +318,24 @@
     }
 
     .lesson {
-      background-color: rgb(89, 118, 173);
+      background-color: #9694f7;
       margin-top: 10px;
       height: 130px;
+      font-size: 12px;
     }
 
     .section {
       border: 1px solid;
       border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
       padding: 20px;
+    }
+
+    .section h3 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: #f79588 !important;
+      margin: 10px;
     }
 
     .lesson a {
@@ -159,10 +354,34 @@
       list-style-type: none;
     }
 
+    ////INSTRUCTOR VIEW
+
     .section-li {
       border: 1px solid;
       border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
       padding: 20px;
+      display: block;
+    }
+
+    .create-section-btn {
+      position: relative;
+      background-color: #0703f0 !important;
+      color: white;
+      font-weight: bold;
+      border-color: #0703f0 !important;
+      
+    }
+
+    .instructor-section {
+      font-family: 'Manrope', sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: #f79588 !important;
+      margin: 10px;
+    }
+
+    .create-section-btn :focus {
+      border-color: #9694f7;
     }
 
     ul .header {
@@ -174,22 +393,25 @@
     }
 
     .lessons li {
-      background: black;
+      background-color: #9694f7;
       color: white;
       margin: 10px;
-      font-family: "Helvetica Neue", Helvetica;
+      font-family: 'Manrope', sans-serif;
       font-weight: 100;
       padding: 8px;
-      font-size: 15px;
+      display: block;
     }
 
     .lessons li b {
       font-size: 25px;
       font-weight: 100;
+      text-align: center;
     }
 
     .lessons li p {
       margin: 0;
+      font-size: 20px;
+      text-align: center;
     }
 
     ul {
@@ -200,4 +422,55 @@
       border: 1px solid;
       border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
     }
+
+    .new-lesson-btn {
+      position: relative;
+      background-color: #0703f0 !important;
+      color: white;
+      font-weight: bold;
+      border-color: #0703f0 !important;
+    }
+
+    .new-lesson-btn :focus {
+      border-color: #9694f7;
+    }
+
+    .modal-header {
+      position: relative;
+    }
+
+  //// DASHBOARD STYLING
+
+  .dashboard-title h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #0703f0;
+    margin: 10px;
+  }
+
+  .dashboard-course a {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f79588 !important;
+    margin: 10px;
+  }
+
+  ////// LESSON VIDEO STYLING
+
+  .lesson-page-title h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #0703f0;
+    margin: 10px;
+  }
+
+  .lesson-page-subtitle p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
 }
